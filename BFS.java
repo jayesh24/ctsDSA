@@ -1,3 +1,10 @@
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
 public class BFS {
 
 
@@ -61,7 +68,7 @@ public class BFS {
 
             int t = in.nextInt() - 1;
 
-            ArrayList<Integer> result = Solution.bfsearch(adjec, t);
+            ArrayList<Integer> result = BFS.bfsearch(adjec, t);
 
             for (int i = 0; i < n; i++) {
                 if (i != t) {
